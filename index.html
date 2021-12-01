@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="carousel.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">Carousel</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            2
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a href="" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item"><a href="" class="nav-link">Link</a></li>
+              <li class="nav-item">
+                <a href="" class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                type="search"
+                class="form-control me-2"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-warning" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+              src="./images/picture.jpg"
+            />
+            <rect width="100%" height="100%" fill="#777"></rect>
+            <img />
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Example headline</h1>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus obcaecati natus quae reiciendis libero atque.
+                </p>
+                <a href="#" class="btn btn-lg btn-outline-primary"
+                  >Sign up today</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+              src="./images/picture2.jpg"
+            />
+            <rect width="100%" height="100%" fill="#777"></rect>
+            <img />
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Another Example headline</h1>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus obcaecati natus quae reiciendis libero atque.
+                </p>
+                <a href="#" class="btn btn-lg btn-outline-warning"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+              src="./images/picture3.jpg"
+            />
+            <rect width="100%" height="100%" fill="#777"></rect>
+            <img />
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>One more for good measure</h1>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus obcaecati natus quae reiciendis libero atque.
+                </p>
+                <a href="#" class="btn btn-lg btn-outline-success"
+                  >Browse Gallery</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previus</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- carousel ending -->
+      <!-- marketing messafing and featurettes begin -->
+      <!-- wrap the rest of the page in another container to center all the content -->
+
+      <div class="container marketing">
+        <!--Three columns of text below the carousel-->
+        <div class="row">
+          <div class="col-lg-4">
+            <img
+            class="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+            src="./images/picture.jpg"
+          />
+          <rect width="100%" height="100%" fill="#777"></rect>
+          <img />
+            <h2>heading</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi
+              aliquid quam corrupti suscipit iure eveniet, libero impedit nulla
+              alias id, maiores enim voluptatum? Odio error soluta harum
+              doloribus dolor!
+            </p>
+            <p>
+              <a href="#" class="btn btn-secondary">Wiew details &raquo;</a>
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <img
+            class="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+            src="./images/picture.jpg"
+          />
+          <rect width="100%" height="100%" fill="#777"></rect>
+          <img />
+            <h2>heading</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi
+              aliquid quam corrupti suscipit iure eveniet, libero impedit nulla
+              alias id, maiores enim voluptatum? Odio error soluta harum
+              doloribus dolor!
+            </p>
+            <p>
+              <a href="#" class="btn btn-secondary">Wiew details &raquo;</a>
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <img
+            class="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+            src="./images/picture.jpg"
+          />
+          <rect width="100%" height="100%" fill="#777"></rect>
+          <img />
+            <h2>heading</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi
+              aliquid quam corrupti suscipit iure eveniet, libero impedit nulla
+              alias id, maiores enim voluptatum? Odio error soluta harum
+              doloribus dolor!
+            </p>
+            <p>
+              <a href="#" class="btn btn-secondary">Wiew details &raquo;</a>
+            </p>
+          </div>
+        </div>
+        <!--Row end-->
+
+        <!-- start the featurettes -->
+        <hr class="featurette-divider">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">first featurette heading
+              <span class="text-muted">ıt'll blow your mind</span>
+            </h2>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aperiam rem culpa, rerum, nulla corrupti distinctio blanditiis voluptatibus id quidem aut, iure nostrum quam nesciunt amet ipsum nobis ex. Excepturi.</p>
+        </div>
+        <div class="col-md-5">
+          <img
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto "
+          width="100%"
+          height="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice"
+          focusable="false"
+          src="./images/picture.jpg"
+        />
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#777"></rect>
+        <img />
+        </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">first featurette heading
+              <span class="text-muted">ıt'll blow your mind</span>
+            </h2>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aperiam rem culpa, rerum, nulla corrupti distinctio blanditiis voluptatibus id quidem aut, iure nostrum quam nesciunt amet ipsum nobis ex. Excepturi.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto "
+          width="100%"
+          height="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice"
+          focusable="false"
+          src="./images/picture.jpg"
+        />
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#777"></rect>
+        <img />
+        </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">first featurette heading
+              <span class="text-muted">ıt'll blow your mind</span>
+            </h2>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aperiam rem culpa, rerum, nulla corrupti distinctio blanditiis voluptatibus id quidem aut, iure nostrum quam nesciunt amet ipsum nobis ex. Excepturi.</p>
+        </div>
+        <div class="col-md-5">
+          <img
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto "
+          width="100%"
+          height="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice"
+          focusable="false"
+          src="./images/picture.jpg"
+        />
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#777"></rect>
+        <img />
+        </div>
+        </div>
+         
+      </div>
+      </div>
+
+
+      <hr class="featurette-divider">
+      <footer class="container">
+        <p class="float-end">
+          <a href="#">back to top</a></p>
+        <p> &copy; 2017-2021 company,inc, &middot;<a href="#">privacy</a>&middot;<a href="#">terms</a></p>
+      </footer>
+    </main>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
